@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Anime</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f4f7fa;
+      font-family: 'Poppins', sans-serif;
+    }
+    .anime-card {
+      display: flex;
+      align-items: center;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 1.5rem;
+    }
+    .anime-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+    .anime-img {
+      width: 150px;
+      height: 225px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .anime-info {
+      margin-left: 1.5rem;
+      flex-grow: 1;
+    }
+    .anime-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .anime-desc {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .btn-primary {
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-5">List animeku</h1>
+    <div class="row">
+
+      <!-- Akudama Drive -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#akudamaDriveModal">
+          <img src="anime/Akudama_Drive.jpg" alt="Akudama Drive" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Akudama Drive</h5>
+            <p class="anime-desc">iki mayan bagus cuy,plot twist banget endinge ga ketebak.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tenshura -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#tenshuraModal">
+          <img src="anime/tenshura.jpg" alt="Tenshura" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Tenshura</h5>
+            <p class="anime-desc">iki mah king dari segala king anime si brok, jangan lupa ada movienya juga ya.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seishun Buta Yarou -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#seishunButaYarouModal">
+          <img src="anime/seishun.jpg" alt="Seishun Buta Yarou" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Seishun Buta Yarou</h5>
+            <p class="anime-desc">iki tergolong anime berat si cuy,tpi bagus kok alur e.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summer Ghost -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#summerGhostModal">
+          <img src="anime/Summer_Ghost_poster.jpg" alt="Summer Ghost" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Summer Ghost</h5>
+            <p class="anime-desc">anime movie masterpice ini mah, sawangane judule ghost2 tpi ndak anime horor kok,malah anime sad.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Natsu e no Tunnel -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#natsuNoTunnelModal">
+          <img src="anime/natsu e no tunnel.jpg" alt="Natsu e no Tunnel" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Natsu e no Tunnel</h5>
+            <p class="anime-desc">ini tergolong underated si, padahal bagus sangat cuy ini movie.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trinity Seven -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#trinitySevenModal">
+          <img src="anime/trinity 7.jpg" alt="Trinity Seven" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Trinity Seven</h5>
+            <p class="anime-desc">b aj si, masuk list2 an ku soale masih layak di tonton.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overlord -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#overlordModal">
+          <img src="anime/overloard.jpg" alt="Overlord" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Overlord</h5>
+            <p class="anime-desc">bagus cuy,aku rewatch beberapa kali.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kishuku Gakkou -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#kishukuGakkouModal">
+          <img src="anime/kishuku gakou.jpg" alt="Kishuku Gakkou" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Kishuku Gakkou</h5>
+            <p class="anime-desc">b aj si,agak prik tpi layak di tonton kok menrurtku ( bikin iri woilah ).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mirai Nikki -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#miraiNikkiModal">
+          <img src="anime/mirai nikki.jpg" alt="Mirai Nikki" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Mirai Nikki</h5>
+            <p class="anime-desc">anime tergolong ending masterpice.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nanatsu no Taizai -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#nanatsuNoTaizaiModal">
+          <img src="anime/nanatsu no taizai.jpg" alt="Nanatsu no Taizai" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Nanatsu no Taizai</h5>
+            <p class="anime-desc">asik cuy, aku ga bisa stop setiap eps e seru.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rakudai Kishi -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#rakudaiKishiModal">
+          <img src="anime/rakudai kishi.jpg" alt="Rakudai Kishi" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Rakudai Kishi</h5>
+            <p class="anime-desc">Pura-Pura lemah aowkwaokw.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Guilty Crown -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#guiltyCrownModal">
+          <img src="anime/guilty crown.jpg" alt="Guilty Crown" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Guilty Crown</h5>
+            <p class="anime-desc">hmmmmm doang si mah.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 86 -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#eightySixModal">
+          <img src="anime/86.jpg" alt="86" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">86</h5>
+            <p class="anime-desc">anime gacor, mengobrak abrik emosi.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dororo -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#dororoModal">
+          <img src="anime/doror.jpg" alt="Dororo" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Dororo</h5>
+            <p class="anime-desc">bagus alur dan perjuangan e.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Noragami -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#noragamiModal">
+          <img src="anime/noragami.jpg" alt="Noragami" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Noragami</h5>
+            <p class="anime-desc">b aj, layak di tonton aj.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gunjou no Magmel -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#gunjouNoMagmelModal">
+          <img src="anime/gunjou no magmel.jpg" alt="Gunjou no Magmel" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Gunjou no Magmel</h5>
+            <p class="anime-desc">underated tpi bagus kok cuy.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mob Psycho -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#mobPsychoModal">
+          <img src="anime/mob psycho.jpg" alt="Mob Psycho" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Mob Psycho</h5>
+            <p class="anime-desc">gweh dah rewatch 5x asli.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enen no Shouboutai -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#enenNoShouboutaiModal">
+          <img src="anime/enen no shouboutai.jpg" alt="Enen no Shouboutai" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Enen no Shouboutai</h5>
+            <p class="anime-desc">bagus cuy alur nya,masih lanjut kok seasonnya.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Darwin's Game -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#darwinsGameModal">
+          <img src="anime/Darwin's game.jpg" alt="Darwin's Game" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Darwin's Game</h5>
+            <p class="anime-desc">underated namun bagus,kek game klo ga di bunuh ya ngebunuh.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bofuri -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#bofuriModal">
+          <img src="anime/bofuri.jpg" alt="Bofuri" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Bofuri</h5>
+            <p class="anime-desc">S1 nya bagus, S2 nya kureng.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Noblesse -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#noblesseModal">
+          <img src="anime/noblesse.jpg" alt="Noblesse" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Noblesse</h5>
+            <p class="anime-desc">sayang ga ada lanjutannya, buat S1 itu versi dongua wak,kecewa.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kemono Jihen -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#kemonoJihenModal">
+          <img src="anime/kemono jihen.jpg" alt="Kemono Jihen" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Kemono Jihen</h5>
+            <p class="anime-desc">kek anak monster unu,dark bjirlah.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Journey: The Princess -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#journeyPrincessModal">
+          <img src="anime/jouran.jpg" alt="Journey: The Princess" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Journey: The Princess</h5>
+            <p class="anime-desc">underated bagus cuy.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Black Clover -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#blackCloverModal">
+          <img src="anime/Black_Clover,_volume_1.jpg" alt="Black Clover" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Black Clover</h5>
+            <p class="anime-desc">zero to hero ini mah.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deatte 5-byou -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#deatte5ByouModal">
+          <img src="anime/deatte 5-byou.jpg" alt="Deatte 5-byou" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Deatte 5-byou</h5>
+            <p class="anime-desc">underated namun alurnya bagus loh,aneh kok sepi ya.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Takt Op. Destiny -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#taktOpDestinyModal">
+          <img src="anime/takt Op. Destiny.jpg" alt="Takt Op. Destiny" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Takt Op. Destiny</h5>
+            <p class="anime-desc">cocok buat penyembah graafik ( kek cwe gw ).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kuro no Shoukanshi -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#kuroNoShoukanshiModal">
+          <img src="anime/kuro no shoukanshi.jpg" alt="Kuro no Shoukanshi" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Kuro no Shoukanshi</h5>
+            <p class="anime-desc">bagus si alur e,tpi kebanyakan CGI.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lycoris Recoil -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#lycorisRecoilModal">
+          <img src="anime/lycoris recoil.jpg" alt="Lycoris Recoil" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Lycoris Recoil</h5>
+            <p class="anime-desc">ahhh.......</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shumatsu no Walkure -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#shumatsuNoWalkureModal">
+          <img src="anime/shumatsu no walkure.jpg" alt="Shumatsu no Walkure" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Shumatsu no Walkure</h5>
+            <p class="anime-desc">setiap eps gelud cuy ( btw ada Adam Hawa nich ).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jigokuroku -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#jigokurakuModal">
+          <img src="anime/jigokuraku.jpg" alt="Jigokuroku" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Jigokuroku</h5>
+            <p class="anime-desc">bwagus cuy alur e,gelud2 juga keren.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shinmai Ossan -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#shinmaiOssanModal">
+          <img src="anime/shinmai ossan.jpg" alt="Shinmai Ossan" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Shinmai Ossan</h5>
+            <p class="anime-desc">gatau klo OP prah ni om2, merendah jirlah.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The New Gate -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#theNewGateModal">
+          <img src="anime/the new gate.jpg" alt="The New Gate" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">The New Gate</h5>
+            <p class="anime-desc">hmmmm aj si.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tsuki ga Michibik -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#tsukiGaMichibikModal">
+          <img src="anime/tsuki ga michibiku.jpg" alt="Tsuki ga Michibik" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Tsuki ga Michibiku</h5>
+            <p class="anime-desc">no 2 setelah tenshura kata gw teh, bwagus pokok.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dainana Ouji -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#dainanaOujiModal">
+          <img src="anime/Dainana ouji.jpg" alt="Dainana Ouji" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Dainana Ouji</h5>
+            <p class="anime-desc">OP prah di bocil.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frieren -->
+      <div class="col-12">
+        <div class="anime-card" data-bs-toggle="modal" data-bs-target="#frierenModal">
+          <img src="anime/Frieren.jpg" alt="Frieren" class="anime-img">
+          <div class="anime-info">
+            <h5 class="anime-title">Frieren</h5>
+            <p class="anime-desc">ga bisa berkata kata buat ni anime.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Manhwa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f4f7fa;
+      font-family: 'Poppins', sans-serif;
+    }
+    .manhwa-card {
+      display: flex;
+      align-items: center;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 1.5rem;
+    }
+    .manhwa-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+    .manhwa-img {
+      width: 150px;
+      height: 225px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .manhwa-info {
+      margin-left: 1.5rem;
+      flex-grow: 1;
+    }
+    .manhwa-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .manhwa-desc {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .btn-primary {
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-5">list Manhwa</h1>
+    <div class="row">
+
+      <!-- Viral Hit -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#viralHitModal">
+          <img src="manhwa/viral hit.jpg" alt="Viral Hit" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">Viral Hit</h5>
+            <p class="manhwa-desc">Manhwa aksi yang mengikuti kisah Hobin Yu, seorang siswa SMA yang menjadi bintang di platform NewTube berkat keahliannya dalam pertarungan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solo Leveling -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#soloLevelingModal">
+          <img src="manhwa/Solo Leveling.jpg" alt="Solo Leveling" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">Solo Leveling</h5>
+            <p class="manhwa-desc">Mengisahkan seorang pemburu yang lemah yang mendapatkan kemampuan untuk meningkatkan kekuatannya melalui sistem misterius.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tower of God -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#towerOfGodModal">
+          <img src="manhwa/Tower of God.jpg" alt="Tower of God" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">Tower of God</h5>
+            <p class="manhwa-desc">Petualangan seorang pemuda yang memasuki menara misterius untuk mencari teman dan kekuatan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Breaker -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#theBreakerModal">
+          <img src="manhwa/The Breaker.jpg" alt="The Breaker" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">The Breaker</h5>
+            <p class="manhwa-desc">Cerita tentang seorang siswa SMA yang dilatih oleh seorang master bela diri legendaris.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Noblesse -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#noblesseModal">
+          <img src="manhwa/Noblesse.jpg" alt="Noblesse" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">Noblesse</h5>
+            <p class="manhwa-desc">Mengikuti seorang vampire bangsawan yang terbangun setelah 820 tahun dan berusaha melindungi umat manusia.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The God of High School -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#godOfHighSchoolModal">
+          <img src="manhwa/The God of High School.jpg" alt="The God of High School" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">The God of High School</h5>
+            <p class="manhwa-desc">Kompetisi bela diri antar siswa SMA terbaik dengan kekuatan supernatural.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sweet Home -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#sweetHomeModal">
+          <img src="manhwa/Sweet Home.jpg" alt="Sweet Home" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">Sweet Home</h5>
+            <p class="manhwa-desc">Kisah horor tentang seorang remaja yang terjebak di apartemennya saat dunia berubah menjadi penuh monster.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lookism -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#lookismModal">
+          <img src="manhwa/Lookism.jpg" alt="Lookism" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">Lookism</h5>
+            <p class="manhwa-desc">Mengisahkan seorang remaja yang memiliki kemampuan untuk berpindah tubuh antara dua penampilan fisik yang berbeda.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hardcore Leveling Warrior -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#hardcoreLevelingWarriorModal">
+          <img src="manhwa/Hardcore Leveling Warrior.jpg" alt="Hardcore Leveling Warrior" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">Hardcore Leveling Warrior</h5>
+            <p class="manhwa-desc">Seorang pemain game VRMMO terkuat yang kehilangan segalanya dan berusaha untuk kembali ke puncak.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Advanced Player of the Tutorial Tower -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#advancedPlayerModal">
+          <img src="manhwa/The Advanced Player of the Tutorial Tower.jpg" alt="The Advanced Player of the Tutorial Tower" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">The Advanced Player of the Tutorial Tower</h5>
+            <p class="manhwa-desc">Seorang pria yang terjebak dalam menara tutorial selama 12 tahun dan menjadi pemain terkuat.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Live -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#theLiveModal">
+          <img src="manhwa/The Live.jpg" alt="The Live" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">The Live</h5>
+            <p class="manhwa-desc">Kisah seorang pria yang terjebak dalam waktu yang sama dan berusaha mengubah nasibnya.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Scholar's Reincarnation -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#scholarsReincarnationModal">
+          <img src="manhwa/The Scholar's Reincarnation.jpg" alt="The Scholar's Reincarnation" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">The Scholar's Reincarnation</h5>
+            <p class="manhwa-desc">Seorang master bela diri yang bereinkarnasi menjadi seorang sarjana dan berusaha hidup damai.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Villainess Reverses the Hourglass -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#villainessReversesTheHourglassModal">
+          <img src="manhwa/The Villainess Reverses the Hourglass.jpg" alt="The Villainess Reverses the Hourglass" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">The Villainess Reverses the Hourglass</h5>
+            <p class="manhwa-desc">Seorang wanita yang mendapatkan kesempatan kedua untuk mengubah nasibnya setelah mati.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Remarried Empress -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#remarriedEmpressModal">
+          <img src="manhwa/The Remarried Empress.jpg" alt="The Remarried Empress" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">The Remarried Empress</h5>
+            <p class="manhwa-desc">Kisah seorang ratu yang bercerai dan menikah lagi dengan kaisar dari kerajaan tetangga.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Return of the Crazy Demon -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#returnOfTheCrazyDemonModal">
+          <img src="manhwa/The Return of the Crazy Demon.jpg" alt="The Return of the Crazy Demon" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">The Return of the Crazy Demon</h5>
+            <p class="manhwa-desc">Seorang master bela diri yang bereinkarnasi dan berusaha membalas dendam.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Breaker: New Waves -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#breakerNewWavesModal">
+          <img src="manhwa/The Breakerr.jpg" alt="The Breaker: New Waves" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">The Breaker: New Waves</h5>
+            <p class="manhwa-desc">Kelanjutan dari The Breaker yang mengikuti petualangan baru seorang siswa SMA.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Legendary Moonlight Sculptor -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#legendaryMoonlightSculptorModal">
+          <img src="manhwa/The Legendary Moonlight Sculptor.jpeg" alt="The Legendary Moonlight Sculptor" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">The Legendary Moonlight Sculptor</h5>
+            <p class="manhwa-desc">Seorang pria yang menjadi pemain terbaik dalam game VRMMO dengan profesi pemahat.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The S-Classes That I Raised -->
+      <div class="col-12">
+        <div class="manhwa-card" data-bs-toggle="modal" data-bs-target="#sClassesThatIRaisedModal">
+          <img src="manhwa/The S-Classes That I Raised.jpg" alt="The S-Classes That I Raised" class="manhwa-img">
+          <div class="manhwa-info">
+            <h5 class="manhwa-title">The S-Classes That I Raised</h5>
+            <p class="manhwa-desc">Seorang pria yang membesarkan para pahlawan S-Class untuk melindungi dunia.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Musik</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #121212;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+    .music-card {
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 1.5rem;
+      background: #1e1e1e;
+      padding: 1rem;
+    }
+    .music-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    .music-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .music-info {
+      margin-left: 1.5rem;
+      flex-grow: 1;
+    }
+    .music-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    .music-desc {
+      color: #b3b3b3;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .btn-play {
+      background-color: #1db954;
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      padding: 0.6rem 1.2rem;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+    }
+    .btn-play:hover {
+      background-color: #1ed760;
+    }
+    .audio-controls {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .audio-duration {
+      margin-left: 10px;
+      color: #b3b3b3;
+      font-size: 0.8rem;
+    }
+    input[type="range"] {
+      flex-grow: 1;
+      margin: 0 10px;
+    }
+    h1 {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-5">Daftar Musik</h1>
+    <div class="row">
+
+      <!-- Musik 1 -->
+      <div class="col-12">
+        <div class="music-card">
+          <img src="musik/blue yung kai.jpg" alt="Cover Lagu 1" class="music-img">
+          <div class="music-info">
+            <h5 class="music-title">blue-young kai</h5>
+            <p class="music-desc">Lagu segala masa.</p>
+          </div>
+          <button class="btn btn-play" onclick="playMusic('music1', this)">Play</button>
+          <audio id="music1" src="musik/blue.mp3"></audio>
+        </div>
+      </div>
+
+      <!-- Musik 2 -->
+      <div class="col-12">
+        <div class="music-card">
+          <img src="musik/lee-hi_43.jpeg" alt="Cover Lagu 2" class="music-img">
+          <div class="music-info">
+            <h5 class="music-title">only - leehi </h5>
+            <p class="music-desc">lu lakik gak?.</p>
+          </div>
+          <button class="btn btn-play" onclick="playMusic('music2', this)">Play</button>
+          <audio id="music2" src="musik/only - leehi (sped up) my only love.mp3"></audio>
+        </div>
+      </div>
+
+      <!-- Musik 3 -->
+      <div class="col-12">
+        <div class="music-card">
+          <img src="musik/beanie.jpg" alt="Cover Lagu 3" class="music-img">
+          <div class="music-info">
+            <h5 class="music-title">beanie</h5>
+            <p class="music-desc">feel nya aneh.</p>
+          </div>
+          <button class="btn btn-play" onclick="playMusic('music3', this)">Play</button>
+          <audio id="music3" src="musik/Chezile - Beanie (Official Visualizer).mp3"></audio>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="music-card">
+          <img src="musik/cry.jpeg" alt="Cover Lagu 3" class="music-img">
+          <div class="music-info">
+            <h5 class="music-title">cry</h5>
+            <p class="music-desc">aku aku aku.</p>
+          </div>
+          <button class="btn btn-play" onclick="playMusic('music4', this)">Play</button>
+          <audio id="music4" src="musik/Cry - Cigarettes After Sex.mp3"></audio>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="music-card">
+          <img src="musik/I Like You Most.jpg" alt="Cover Lagu 3" class="music-img">
+          <div class="music-info">
+            <h5 class="music-title">i like you most</h5>
+            <p class="music-desc">gatau pernah denger.</p>
+          </div>
+          <button class="btn btn-play" onclick="playMusic('music5', this)">Play</button>
+          <audio id="music5" src="musik/I Like You Most (sped up) (english version) (SHAD Cover) - Pochet ft. VARINZ.mp3"></audio>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="music-card">
+          <img src="musik/sia snowman.jpg" alt="Cover Lagu 3" class="music-img">
+          <div class="music-info">
+            <h5 class="music-title">sia snowman</h5>
+            <p class="music-desc">nostalgia ga?.</p>
+          </div>
+          <button class="btn btn-play" onclick="playMusic('music6', this)">Play</button>
+          <audio id="music6" src="musik/sia - snowman (slowed _ reverb) [with lyrics].mp3"></audio>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="music-card">
+          <img src="musik/swater wather.jpg" alt="Cover Lagu 3" class="music-img">
+          <div class="music-info">
+            <h5 class="music-title">swater wather</h5>
+            <p class="music-desc">enak banget suara ni cwe jir.</p>
+          </div>
+          <button class="btn btn-play" onclick="playMusic('music7', this)">Play</button>
+          <audio id="music7" src="musik/sweater weather - rhianne (cover).mp3"></audio>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="music-card">
+          <img src="musik/wave to earth.jpg" alt="Cover Lagu 3" class="music-img">
+          <div class="music-info">
+            <h5 class="music-title">wave to earth</h5>
+            <p class="music-desc">laguku di jalan.</p>
+          </div>
+          <button class="btn btn-play" onclick="playMusic('music8', this)">Play</button>
+          <audio id="music8" src="musik/wave to earth - seasons.mp3"></audio>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="music-card">
+          <img src="musik/we dont talk animor.jpg" alt="Cover Lagu 3" class="music-img">
+          <div class="music-info">
+            <h5 class="music-title">we don't talk anymore</h5>
+            <p class="music-desc">yang versi slow gacor cuy.</p>
+          </div>
+          <button class="btn btn-play" onclick="playMusic('music9', this)">Play</button>
+          <audio id="music9" src="musik/Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video].mp3"></audio>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="music-card">
+          <img src="musik/wildflower.jpg" alt="Cover Lagu 3" class="music-img">
+          <div class="music-info">
+            <h5 class="music-title">wildflower</h5>
+            <p class="music-desc">mbak2 nganjuk.</p>
+          </div>
+          <button class="btn btn-play" onclick="playMusic('music10', this)">Play</button>
+          <audio id="music10" src="musik/Billie Eilish - WILDFLOWER (Official Lyric Video).mp3"></audio>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="music-card">
+          <img src="musik/you and i.jpg" alt="Cover Lagu 3" class="music-img">
+          <div class="music-info">
+            <h5 class="music-title">you & I</h5>
+            <p class="music-desc">ganteng2 an suara.</p>
+          </div>
+          <button class="btn btn-play" onclick="playMusic('music11', this)">Play</button>
+          <audio id="music11" src="musik/You _ I.mp3"></audio>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="music-card">
+          <img src="musik/duyung.png" alt="Cover Lagu 3" class="music-img">
+          <div class="music-info">
+            <h5 class="music-title">fantasi</h5>
+            <p class="music-desc">senandungnya asik woilah.</p>
+          </div>
+          <button class="btn btn-play" onclick="playMusic('music12', this)">Play</button>
+          <audio id="music12" src="musik/OST Putri Duyung 1999 (Pita Loppies - Fantasi).mp3"></audio>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    let currentPlaying = null;
+    let currentButton = null;
+    let currentRange = null;
+    let currentDuration = null;
+    let currentControls = null;
+    let currentTimeLabel = null;
+    let currentDurationLabel = null;
+
+    function playMusic(id, button) {
+      const audio = document.getElementById(id);
+      const controls = document.getElementById("controls" + id.slice(-1));
+      const range = document.getElementById("range" + id.slice(-1));
+      const currentTimeLabel = document.getElementById("current-time" + id.slice(-1));
+      const durationLabel = document.getElementById("duration" + id.slice(-1));
+
+      if (currentPlaying && currentPlaying !== audio) {
+        currentPlaying.pause();
+        currentPlaying.currentTime = 0;
+        if (currentButton) {
+          currentButton.textContent = 'Play';
+        }
+        if (currentControls) {
+          currentControls.style.display = 'none';
+        }
+      }
+
+      if (audio.paused) {
+        audio.play();
+        button.textContent = 'Pause';
+        currentPlaying = audio;
+        currentButton = button;
+        currentControls = controls;
+        currentTimeLabel = currentTimeLabel;
+        currentDurationLabel = durationLabel;
+
+        controls.style.display = 'flex';  // Menampilkan kontrol durasi saat audio diputar
+
+        audio.addEventListener('timeupdate', function() {
+          const currentTime = audio.currentTime;
+          const duration = audio.duration;
+          const value = (currentTime / duration) * 100;
+          range.value = value;
+          currentTimeLabel.textContent = formatTime(currentTime);
+          durationLabel.textContent = '/ ' + formatTime(duration);
+        });
+
+        range.addEventListener('input', function() {
+          const newTime = (range.value / 100) * audio.duration;
+          audio.currentTime = newTime;
+        });
+      } else {
+        audio.pause();
+        button.textContent = 'Play';
+        currentPlaying = null;
+        currentButton = null;
+        currentControls.style.display = 'none';
+      }
+    }
+
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const sec = Math.floor(seconds % 60);
+      return minutes + ":" + (sec < 10 ? '0' : '') + sec;
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

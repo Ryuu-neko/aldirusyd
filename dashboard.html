@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #121212;
+      color: #e0e0e0;
+      font-family: 'Poppins', sans-serif;
+      animation: fadeInEffect 1s ease-out;
+    }
+
+    @keyframes fadeInEffect {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .card {
+      background: #1e1e1e;
+      border: none;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .profile-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-top: 1rem;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+      color: #b0b0b0;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: #b0b0b0;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .btn {
+      font-size: 0.9rem;
+      border-radius: 8px;
+    }
+
+    .btn-outline-primary { border-color: #bb86fc; color: #bb86fc; }
+    .btn-outline-primary:hover { background: #bb86fc; color: #121212; }
+
+    .btn-outline-success { border-color: #03dac6; color: #03dac6; }
+    .btn-outline-success:hover { background: #03dac6; color: #121212; }
+
+    .btn-outline-danger { border-color: #cf6679; color: #cf6679; }
+    .btn-outline-danger:hover { background: #cf6679; color: #121212; }
+
+    .btn-outline-warning { border-color: #ffd54f; color: #ffd54f; }
+    .btn-outline-warning:hover { background: #ffd54f; color: #121212; }
+
+    /* Splash Screen Style */
+    #splash-screen {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 1s ease-out;
+    }
+
+    #splash-screen img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    /* Pop-up animation for content */
+    @keyframes popUp {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Main content style */
+    #main-content {
+      animation: popUp 0.5s ease-out forwards;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash-screen" class="d-flex justify-content-center align-items-center">
+    <img src="Aldi.jpg" alt="Splash Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover; box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);">
+  </div>
+  
+  
+
+  <!-- Main content -->
+  <main id="main-content" class="container my-5" style="display: none;">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <!-- Anime List -->
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+            <img src="kilua.jpg" alt="Anime" class="profile-img mb-3">
+            <h5 class="card-title text-primary">Anime</h5>
+            <p class="card-text">Beberapa list anime underated yang menurutku bagus.</p>
+            <a href="anime.html" class="btn btn-outline-primary">Lihat Anime</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Manhwa List -->
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+            <img src="begining.jpg" alt="Manhwa" class="profile-img mb-3">
+            <h5 class="card-title text-success">Manhwa</h5>
+            <p class="card-text">Manhwa yang pernah aku baca.</p>
+            <a href="manhwa.html" class="btn btn-outline-success">Lihat Manhwa</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Film List -->
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+            <img src="https://via.placeholder.com/100" alt="Film" class="profile-img mb-3">
+            <h5 class="card-title text-danger">Film</h5>
+            <p class="card-text">Nikmati koleksi film populer dari berbagai genre.</p>
+            <a href="film.html" class="btn btn-outline-danger">Lihat Film</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Musik List -->
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+            <img src="spotify.png" alt="Musik" class="profile-img mb-3">
+            <h5 class="card-title text-warning">Musik</h5>
+            <p class="card-text">Dengarkan musik favorit yang membuat hari Anda lebih berwarna.</p>
+            <a href="musik.html" class="btn btn-outline-warning">Lihat Musik</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p class="mb-0">&copy;Aldi Rusyd A'layuddin Faqih.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Menghapus splash screen dan menampilkan konten utama setelah beberapa detik
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.getElementById('splash-screen').style.opacity = '0';
+        setTimeout(function() {
+          document.getElementById('splash-screen').style.display = 'none';
+          document.getElementById('main-content').style.display = 'block';
+        }, 1000);
+      }, 2000); // Waktu splash screen ditampilkan (2 detik)
+    });
+  </script>
+</body>
+</html>
